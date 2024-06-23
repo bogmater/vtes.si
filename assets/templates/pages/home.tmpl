@@ -1,0 +1,7 @@
+{{define "page:title"}}Example page{{end}}
+
+{{define "page:main"}}
+    {{range .Posts}}
+        {{template "component:card_header" .}}
+    {{end}}
+{{end}}
