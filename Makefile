@@ -47,7 +47,7 @@ test/cover:
 ## build: build the cmd/web application
 .PHONY: build
 build:
-	npx tailwindcss -i ./assets/static/css/input.css -o ./assets/static/css/output.css
+	#npx tailwindcss -i ./assets/static/css/input.css -o ./assets/static/css/output.css
 	go build -o=/tmp/bin/web ./cmd/web
 	
 ## run: run the cmd/web application
