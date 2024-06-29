@@ -152,7 +152,10 @@ func (app *application) requireBasicAuthentication(next http.Handler) http.Handl
 			return
 		}
 
-		err := bcrypt.CompareHashAndPassword([]byte(app.config.basicAuth.hashedPassword), []byte(plaintextPassword))
+		err := bcrypt.CompareHashAndPassword(
+			[]byte(app.config.basicAuth.hashedPassword),
+			[]byte(plaintextPassword),
+		)
 		switch {
 		case errors.Is(err, bcrypt.ErrMismatchedHashAndPassword):
 			app.basicAuthenticationRequired(w, r)

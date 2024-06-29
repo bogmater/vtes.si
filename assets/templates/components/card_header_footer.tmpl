@@ -1,0 +1,13 @@
+{{define "component:card_header_footer"}}
+<div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow mt-4">
+    <div class="px-4 py-5 sm:px-6">
+        <p class="text-3xl font-bold">{{ .Title }}</p>
+    </div>
+    <div class="px-4 py-5 sm:p-6">
+        <p>{{ .Content }}</p>
+    </div>
+    <div class="px-4 py-5 sm:px-6 text-slate-400">
+        <p class="text-sm flex flex-row justify-between"><span>{{ .Author }}</span><span>{{ formatTime "2.1.2006" .Date }}</span></p>
+    </div>
+</div>
+{{end}}

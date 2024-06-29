@@ -19,26 +19,43 @@ func (app *application) home(w http.ResponseWriter, r *http.Request) {
 	type homeContent struct {
 		Title   string
 		Content string
+		Author  string
+		Date    time.Time
 	}
 
 	var posts = []homeContent{
 		{
 			Title:   "Title 1",
 			Content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
+			Author:  "Mimmo",
+			Date:    time.Date(2024, time.June, 25, 0, 0, 0, 0, time.UTC),
 		},
 		{
 			Title:   "Title 2",
 			Content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
+			Author:  "Mimmo",
+			Date:    time.Date(2024, time.June, 25, 0, 0, 0, 0, time.UTC),
 		},
 		{
 			Title:   "Title 3",
 			Content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
+			Author:  "Mimmo",
+			Date:    time.Date(2024, time.June, 25, 0, 0, 0, 0, time.UTC),
 		},
 	}
 
 	data["Posts"] = posts
 
 	err := response.Page(w, http.StatusOK, data, "pages/home.tmpl")
+	if err != nil {
+		app.serverError(w, r, err)
+	}
+}
+
+func (app *application) resources(w http.ResponseWriter, r *http.Request) {
+	data := app.newTemplateData(r)
+
+	err := response.Page(w, http.StatusOK, data, "pages/resources.tmpl")
 	if err != nil {
 		app.serverError(w, r, err)
 	}
