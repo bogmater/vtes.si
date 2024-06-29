@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"fmt"
 	"log/slog"
@@ -108,6 +109,8 @@ func run(logger *slog.Logger) error {
 		fmt.Printf("version: %s\n", version.Get())
 		return nil
 	}
+
+	logger.Debug(cfg.db.dsn)
 
 	db, err := database.New(cfg.db.dsn, cfg.db.automigrate)
 	if err != nil {
