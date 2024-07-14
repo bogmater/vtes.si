@@ -1218,6 +1218,10 @@ video {
     display: grid;
   }
 
+  .sm\:h-32 {
+    height: 8rem;
+  }
+
   .sm\:h-96 {
     height: 24rem;
   }
