@@ -657,10 +657,6 @@ video {
   height: 4rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
@@ -669,8 +665,8 @@ video {
   height: 1.5rem;
 }
 
-.h-96 {
-  height: 24rem;
+.h-64 {
+  height: 16rem;
 }
 
 .h-full {
@@ -1220,6 +1216,10 @@ video {
 
   .sm\:grid {
     display: grid;
+  }
+
+  .sm\:h-96 {
+    height: 24rem;
   }
 
   .sm\:w-full {
