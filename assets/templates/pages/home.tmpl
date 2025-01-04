@@ -1,6 +1,118 @@
 {{define "page:title"}}vtes.si{{end}}
 
 {{define "page:main"}}
+<div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white mx-auto max-w-7xl shadow mt-4" x-data="{ open: true }">
+    <div class="px-4 py-5 sm:px-6">
+        <p class="text-3xl font-bold"><span class="krcg-icon">O</span> <span class="krcg-icon">R</span> True Love's Face Brežice</p>
+    </div>
+    <div class="px-4 py-5 sm:p-6">
+    <div>
+    <div class="px-4 sm:px-0">
+        <h2 class="text-base font-semibold leading-7 text-gray-900">A Valentine's Day VTES tournament in Brežice!</h2>
+    </div>
+    <div id="details-container" x-show="open">
+        <div class="px-4 sm:px-0">
+            <h3 class="text-base font-semibold leading-7 text-gray-900 mt-6">Rewards</h3>
+            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500 mb-4">
+               An Ultimate Guard Flip'n'Tray deck box for the winner!
+            </p>
+            <h3 class="text-base font-semibold leading-7 text-gray-900 mt-6">Participation Trophy</h3>
+            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500 mb-4">
+                Each player will get 10 promos, randomly chosen out of the latest available Full Bleed cards and Promo Pack 4 (Note that it's fully random from the pool of Full Bleed cards and PP4, so it's possible that there are no cards from PP4 or Full Bleed cards in a single promo pack). An example below:
+            </p>
+            <img src="/static/img/forced_march_participation_trophy.jpg" class="block mx-auto sm:h-96 h-64" alt="Promos"></img>
+            <h3 class="text-base font-semibold leading-7 text-gray-900 mt-6">Notes</h3>
+            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">
+                There is a suspension of Schengen in Slovenia currently, so make sure you have personal identification documents with you even if you're traveling from a country that's a member of the EU.
+            </p>
+        </div>
+        <div class="mt-6 border-t border-gray-100">
+        <dl class="divide-y divide-gray-100">
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Date</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">08.2.2025</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Start time</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">10:00h</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Rounds</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">3R + F</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Time Limit</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">2h</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Format</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Constructed</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Proxy Policy</dt>
+        <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Proxies allowed</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Venue</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4765b77d8d241061:0xbe6d192fff0cf7bc?sa=X&ved=1t:8290&ictx=111" target="_blank" class="text-blue-400">Restavracija Štefanič</a> - <a href="https://www.restavracija-stefanic.si/menu-and-cenik" target="_blank" class="text-blue-400">Menu</a></dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Contact</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">vtes.slovenia (at) gmail.com</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Entry fee</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">5€</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <dt class="text-sm font-medium sm:text-right leading-6 text-gray-900">Recommended Accomodation</dt>
+        <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+        <ul role="list" class="divide-y divide-gray-100 rounded-md border border-gray-200">
+        <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+        <div class="flex w-0 flex-1 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+            </svg>
+
+            <div class="ml-4 flex min-w-0 flex-1 gap-2">
+            <span class="truncate font-medium"><a href="https://www.splavar.si/" target="_blank" class="text-blue-400">Hotel Splavar</a></span>
+            <span class="flex-shrink-0 text-gray-400"><a href="https://www.google.com/maps/dir/Hotel+Splavar,+Cesta+prvih+borcev+40a,+8250+Bre%C5%BEice/Restavracija+%C5%A0tefani%C4%8D,+Bizeljska+cesta,+Bre%C5%BEice/@45.905524,15.5939825,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4765b7624fb2918b:0xd17217acad68e961!2m2!1d15.5921432!2d45.9057757!1m5!1m1!1s0x4765b77d8d241061:0xbe6d192fff0cf7bc!2m2!1d15.6013599!2d45.9061027!3e2?entry=ttu" target="_blank">Walking distance (10-15min)</a></span>
+        </div>
+        </div>
+        <div class="ml-4 flex-shrink-0">
+            <a href="https://www.booking.com/hotel/si/splavar.sl.html?aid=356980&label=gog235jc-1BCAMoywFCB2JyZXppY2VIM1gDaMsBiAEBmAEjuAEZyAEM2AEB6AEBiAIBqAIDuAKEr4C0BsACAdICJDJmMmQ2MmU4LWFlNzctNDcxNy1iMDkyLTUzMTg4MmY0ODA1MdgCBeACAQ&sid=45e6d9b34c2347ee95ba0afe17f48d76&all_sr_blocks=113971706_108174966_0_0_0;checkin=2024-07-26;checkout=2024-07-27;dest_id=-76210;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=113971706_108174966_0_0_0;hpos=1;matching_block_id=113971706_108174966_0_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=113971706_108174966_0_0_0__7813;srepoch=1719675529;srpvid=86896e023df6016b;type=total;ucfs=1&#hotelTmpl" class="font-medium text-indigo-600 hover:text-indigo-500">Booking</a>
+        </div>
+        </li>
+        <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+        <div class="flex w-0 flex-1 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+            </svg>
+        <div class="ml-4 flex min-w-0 flex-1 gap-2">
+            <span class="truncate font-medium"><a href="https://www.mc-hostel.si/hostel" target="_blank" class="text-blue-400">Hostel MC</a></span>
+            <span class="flex-shrink-0 text-gray-400"><a href="https://www.google.com/maps/dir/MC+Hostel+Bre%C5%BEice,+Gub%C4%8Deva+ulica,+Bre%C5%BEice/Restavracija+%C5%A0tefani%C4%8D,+Bizeljska+cesta+37,+8250+Bre%C5%BEice/@45.9043129,15.5957115,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4765b77b4452b26d:0xc0f9720be3d91bcb!2m2!1d15.5951715!2d45.9016492!1m5!1m1!1s0x4765b77d8d241061:0xbe6d192fff0cf7bc!2m2!1d15.6013599!2d45.9061027!3e2?entry=ttu" target="_blank">Walking distance (10-15min)</a></span>
+        </div>
+        </div>
+        <div class="ml-4 flex-shrink-0">
+            <a href="https://api.booker-tools.com/booking-engine/unit/4836/form/51de5fb099455e1ea38f059278581d44f8bb857a66d3bcc9bfd01372c3323b49?lang=en" class="font-medium text-indigo-600 hover:text-indigo-500">Booking</a>
+        </div>
+        </li>
+        </ul>
+        </dd>
+        </div>
+        </dl>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="divide-y divide-gray-200 overflow-hidden rounded-lg mx-auto max-w-7xl mt-4">
+    <div class="px-4 sm:px-6">
+        <h1 class="text-xl font-semibold leading-12 text-gray-900">Previous Events:</h2>
+    </div>
+</div>
+
 <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white mx-auto max-w-7xl shadow mt-4" x-data="{ open: false }">
     <div class="px-4 py-5 sm:px-6">
         <p class="text-3xl font-bold"><span class="krcg-icon">F</span> <span class="krcg-icon">C</span> Forced March Brežice</p>
